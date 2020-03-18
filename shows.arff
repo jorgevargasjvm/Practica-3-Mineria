@@ -1,0 +1,69 @@
+@relation shows
+
+@attribute nombre {'The Good Wife',Baskets,Banshee,'Men of a Certain Age','New Girl',Parenthood,'Jane the Virgin','Gravity Falls',Transparent,'Mr. Robot','Steven Universe',Girls,Pose,'Master of None','You’re the Worst','The Legend of Korra','The Deuce','Key & Peele',Catastrophe,'The Good Place',Enlightened,Treme,'Broad City',Veep,'Boardwalk Empire',Watchmen,'Brooklyn Nine-Nine',Brockmire,'Crazy Ex-Girlfriend','Orange Is the New Black',Review,'Bob’s Burgers','Halt and Catch Fire',Hannibal,Fargo,'Game of Thrones','Twin Peaks: The Return',Community,Terriers,'Better Call Saul','Better Things',Rectify,Justified,Atlanta,'The Americans',Fleabag,'BoJack Horseman','Breaking Bad','Parks and Recreation','The Leftovers'}
+@attribute genero {Drama,Comedia,Fantasia,Musical,Satira,Sitcom,Policial,Triller,comedia,'Drama '}
+@attribute pais {USA,UK}
+@attribute n_temporadas numeric
+@attribute n_episodios numeric
+@attribute 'duración del episodio' numeric
+@attribute 'sexo_protagonista (hombre, mujer, coral)' {coral,hombre,mujer}
+@attribute canal {CBS,FX,HBO,TNT,FOX,NBC,'The CW',Disney,Amazon,'USA Network','Cartoon Network',Netflix,Nickelodeon,'Comedy Central','Channel 4',IFC,AMC,Showtime,'BBC '}
+@attribute 'camara_setup (única, multi-cámara)' string
+@attribute año_inicio numeric
+@attribute año_fin numeric
+@attribute emmys {yes,no}
+@attribute globo_oro {yes,no}
+@attribute imb_score numeric
+@attribute rotemt_audience_score numeric
+
+@data
+'The Good Wife',Drama,USA,7,156,45,coral,CBS,?,2009,2016,yes,yes,8.3,92
+Baskets,Comedia,USA,3,30,30,coral,FX,?,2016,2019,yes,no,7.5,87
+Banshee,Drama,USA,4,48,50,hombre,HBO,?,2013,2016,yes,no,8.4,90
+'Men of a Certain Age',Comedia,USA,2,22,60,hombre,TNT,?,2009,2011,no,no,8,100
+'New Girl',Comedia,USA,7,146,22,mujer,FOX,?,2011,2018,yes,yes,7.7,82
+Parenthood,Comedia,USA,6,103,43,coral,NBC,?,2010,2015,no,no,8.2,95
+'Jane the Virgin',Comedia,USA,5,100,40,mujer,'The CW',?,2014,2019,no,yes,7.8,86
+'Gravity Falls',Fantasia,USA,2,40,22,coral,Disney,?,2012,2016,yes,no,8.9,98
+Transparent,Comedia,USA,4,40,30,coral,Amazon,?,2014,2019,no,yes,7.8,77
+'Mr. Robot',Drama,USA,4,45,45,hombre,'USA Network',?,2015,2019,yes,yes,8.5,94
+'Steven Universe',Fantasia,USA,5,160,11,hombre,'Cartoon Network',?,2013,2019,yes,no,8.3,91
+Girls,Comedia,USA,6,62,30,mujer,HBO,?,2012,2017,yes,yes,7.3,100
+Pose,Musical,USA,2,18,60,mujer,FX,?,2018,?,no,no,8.6,87
+'Master of None',Comedia,USA,2,20,30,coral,Netflix,?,2015,?,yes,yes,8.3,90
+'You’re the Worst',Comedia,USA,5,62,25,coral,FX,?,2014,2019,no,no,8.1,89
+'The Legend of Korra',Fantasia,USA,4,52,25,mujer,Nickelodeon,?,2012,2014,yes,no,8.4,85
+'The Deuce',Drama,USA,3,25,60,coral,HBO,?,2017,2019,no,no,8.1,83
+'Key & Peele',Comedia,USA,5,53,21,hombre,'Comedy Central',?,2012,2015,yes,no,8.3,93
+Catastrophe,Comedia,UK,3,18,25,coral,'Channel 4',?,2012,2019,no,no,8.2,92
+'The Good Place',Fantasia,USA,4,53,22,mujer,Netflix,?,2016,2020,yes,yes,8.2,89
+Enlightened,Comedia,UK,2,18,27,coral,HBO,?,2011,2013,yes,yes,7.5,91
+Treme,Drama,USA,4,36,60,coral,HBO,?,2010,2013,no,no,8.2,94
+'Broad City',Comedia,USA,5,40,23,mujer,'Comedy Central',?,2014,2019,no,no,8.4,85
+Veep,Satira,USA,7,65,30,coral,HBO,?,2012,2019,yes,yes,8.3,88
+'Boardwalk Empire',Drama,USA,5,56,55,coral,HBO,?,2010,2014,no,yes,8.5,96
+Watchmen,Drama,USA,1,9,60,coral,HBO,?,2019,2019,no,no,8.1,54
+'Brooklyn Nine-Nine',Sitcom,USA,6,130,22,coral,FOX,?,2013,?,yes,yes,8.4,?
+Brockmire,Comedia,USA,3,24,22,coral,IFC,?,2017,?,no,no,8.1,93
+'Crazy Ex-Girlfriend',Comedia,USA,4,62,40,coral,'The CW',?,2015,2019,no,yes,7.8,?
+'Orange Is the New Black',Comedia,USA,7,91,60,coral,Netflix,?,2013,2019,yes,yes,8.1,81
+Review,Comedia,USA,3,22,22,coral,'Comedy Central',?,2014,2017,no,no,8.3,88
+'Bob’s Burgers',Comedia,USA,8,150,22,coral,FOX,?,2011,?,no,no,8.1,86
+'Halt and Catch Fire',Drama,USA,4,40,45,coral,AMC,?,2014,2017,no,no,8.4,92
+Hannibal,Policial,USA,3,39,43,hombre,NBC,?,2013,2015,no,no,8.5,94
+Fargo,Triller,USA,3,30,50,coral,FX,?,2014,?,yes,no,8.9,93
+'Game of Thrones',Fantasia,USA,8,73,60,coral,HBO,?,2011,2019,yes,yes,9.3,86
+'Twin Peaks: The Return',Drama,USA,1,18,55,hombre,Showtime,?,2017,2017,no,no,8.5,?
+Community,Comedia,USA,5,110,20,coral,NBC,?,2009,2015,yes,no,8.5,88
+Terriers,Comedia,USA,1,13,45,coral,FX,?,2010,2010,no,no,8.4,96
+'Better Call Saul',Drama,USA,4,40,45,hombre,AMC,?,2015,?,no,no,8.7,96
+'Better Things',Comedia,USA,2,32,25,coral,FX,?,2016,?,no,no,7.7,88
+Rectify,Drama,USA,4,40,45,coral,AMC,?,2014,2016,no,no,8.3,93
+Justified,Drama,USA,6,78,45,coral,FX,?,2010,2015,no,no,8.6,95
+Atlanta,Comedia,USA,2,21,30,hombre,FX,?,2016,?,yes,yes,8.6,89
+'The Americans',Drama,USA,?,75,44,coral,FX,?,2013,2018,no,no,8.4,93
+Fleabag,Comedia,UK,2,12,27,mujer,'BBC ',?,2016,2019,yes,no,8.7,93
+'BoJack Horseman',comedia,USA,6,77,25,hombre,Netflix,?,2014,2020,no,no,8.7,95
+'Breaking Bad','Drama ',USA,5,62,49,hombre,AMC,?,2012,2013,yes,yes,9.5,98
+'Parks and Recreation',comedia,USA,7,125,22,mujer,NBC,?,2009,2015,yes,yes,8.6,91
+'The Leftovers',Drama,USA,3,23,60,hombre,HBO,?,2014,2017,no,no,8.3,89
